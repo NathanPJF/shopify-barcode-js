@@ -115,9 +115,7 @@ You can add a number of attributes which will change the look of the barcode:
 ![Tailored barcode output](http://snapify.shopify.com/12-22-h43f9-9d64p.png)
 
 ####Change format and string font-family, flatten bars
-```
-<canvas class="item_barcode" data-barcode="{{ line_item.variant.barcode }}" data-format="CODE39" data-font="sans-serif" data-fontsize="22" data-display="true"></canvas>
-```
+`<canvas class="item_barcode" data-barcode="{{ line_item.variant.barcode }}" data-format="CODE39" data-font="sans-serif" data-fontsize="22" data-display="true"></canvas>`
 ![CODE39 example](http://snapify.shopify.com/12-28-hyi5x-0tkqq.png)
 
 
