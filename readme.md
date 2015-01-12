@@ -98,7 +98,7 @@ Later in your template, make a liquid reference to the product variant barcode w
 
 ###Minimum requirements
 
-The barcode muct have the attributes `class="item_barcode" data-barcode="{{ line_item.variant.barcode }}"` within the element in order for 
+The barcode must have the attributes `class="item_barcode" data-barcode="{{ line_item.variant.barcode }}"` within the element in order for 
 the barcode.js functions to work.
 
 The attributes can be within a `<canvas>` tag or an `<img>` tag.  Those are your only options for HTML elements.
