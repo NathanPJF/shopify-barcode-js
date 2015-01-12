@@ -86,9 +86,9 @@ Later in your template, make a liquid reference to the product variant barcode w
 The barcode muct have the attributes `class="item_barcode" data-barcode="{{ line_item.variant.barcode }}"` within the element in order for 
 the barcode.js functions to work.
 
-The attributes can be within a `<canvas>` tag or an `<img>` tag.  Those are your only options.
+The attributes can be within a `<canvas>` tag or an `<img>` tag.  Those are your only options for HTML elements.
 
-###Extra options
+###Extra attribute options
 
 You can add a number of attributes which will change the look of the barcode:
 
@@ -114,8 +114,10 @@ You can add a number of attributes which will change the look of the barcode:
 ```
 ![Tailored barcode output](http://snapify.shopify.com/12-22-h43f9-9d64p.png)
 
-####Change format and string font-family, flatten bars
-`<canvas class="item_barcode" data-barcode="{{ line_item.variant.barcode }}" data-format="CODE39" data-font="sans-serif" data-fontsize="22" data-display="true"></canvas>`
+####Change format; barcode string font-family, font-size
+```
+<canvas class="item_barcode" data-barcode="{{ line_item.variant.barcode }}" data-format="CODE39" data-font="sans-serif" data-fontsize="22" data-display="true"></canvas>
+```
 ![CODE39 example](http://snapify.shopify.com/12-28-hyi5x-0tkqq.png)
 
 
