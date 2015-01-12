@@ -27,7 +27,7 @@ as to what strings can be turned into different barcode formats.
 
 ###Get the barcode.js file
 
-Download this [barcode.js](https://rawgit.com/NathanPJF/shopify-barcode-js/master/barcode.js) file and upload it to your Shopify store's *Files directory*.  It is strongly recommended that 
+Download this [barcode.js](https://rawgit.com/NathanPJF/shopify-barcode-js/master/barcode.js.zip) file and upload it to your Shopify store's *Files directory*.  It is strongly recommended that 
 it is uploaded in the store Files directory as opposed to an individual theme's Assets directory.
 
 Make note of the file's URL as you will need to copy/paste this later.
