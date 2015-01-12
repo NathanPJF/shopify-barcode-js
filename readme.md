@@ -1,4 +1,4 @@
-#Barcode JS
+#Barcode JS: Shopify Order Printer App
 
 This is a javascript solution to have Shopify's [Order Printer app](https://apps.shopify.com/order-printer) 
 display product variant barcodes in the following formats:
@@ -79,17 +79,12 @@ Later in your template, make a liquid reference to the product variant barcode w
 
 ```
 {% for line_item in line_items %}
-
-<p>{{ line_item.name }}</p>
-
-{% unless line_item.variant.barcode == blank %}
-<p class="barcode-section"> <canvas class="item_barcode" data-barcode="{{ line_item.variant.barcode }}"></canvas></p>
-
-{% else %}
-
-<em>No barcode for this item</em>
-
-{% endunless %}
+  <p>{{ line_item.name }}</p>
+  {% unless line_item.variant.barcode == blank %}
+    <p class="barcode-section"> <canvas class="item_barcode" data-barcode="{{ line_item.variant.barcode }}"></canvas></p>
+  {% else %}
+    <em>No barcode for this item</em>
+  {% endunless %}
 <hr>
 {% endfor %}
 ```
