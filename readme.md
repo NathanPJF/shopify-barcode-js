@@ -11,9 +11,6 @@ Below is a screenshot of a basic template using this barcode solution:
 
 ![Barcode JS in action](http://snapify.shopify.com/12-14-sbn1g-fftu5.png)
 
-If you are having trouble implementing this solution on your Order Printer templates, you may
-want to check out the simpler [CSS based solution](https://github.com/NathanPJF/shopify-barcode-css).
-Please note that the CSS solution will only create CODE39 barcodes.
 
 ##Before you get started
 
