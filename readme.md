@@ -1,6 +1,11 @@
 #Barcode JS: Shopify Order Printer App
 
-This is a javascript solution to have Shopify's [Order Printer app](https://apps.shopify.com/order-printer) 
+* [Before you get started](#before-you-get-started)
+* [Setup instructions](#setup-instructions)
+* [Options](#options)
+* [Acknowledgments](#acknowledgments)
+
+This is a JavaScript solution to have Shopify's [Order Printer app](https://apps.shopify.com/order-printer) 
 display product variant barcodes in the following formats:
 
 * [CODE39](http://en.wikipedia.org/wiki/Code_39)
@@ -86,16 +91,14 @@ Later in your template, make a liquid reference to the product variant barcode w
 {% endfor %}
 ```
 
-##Markup options
-
-###Minimum requirements
+###Required markup
 
 The barcode must have the attributes `class="item_barcode" data-barcode="{{ line_item.variant.barcode }}"` within the element in order for 
 the barcode.js functions to work.
 
 The attributes can be within a `<canvas>` tag or an `<img>` tag.  Those are your only options for HTML elements.
 
-###Extra attribute options
+##Options
 
 You can add a number of attributes which will change the look of the barcode:
 
